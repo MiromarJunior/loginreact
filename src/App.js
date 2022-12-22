@@ -2,15 +2,21 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
+  Routes,
 } from "react-router-dom";
 import Home from "./Pages/Home";
+import { AuthProvider } from "../src/context";
 
-export default function Routes() {
+const App = () => {
   return(
-    <Router>
-        <Route exact path="/">
-          <Home />
-        </Route>
+    <AuthProvider>
+      <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
     </Router>
+    </AuthProvider>
   )
 }
+
+export default App;
