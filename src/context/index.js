@@ -7,7 +7,7 @@ export var Context = createContext({
 
 export function AuthProvider({ children }) {
     
-  const [user, setUserHook] = useState({
+  const [user, setUser] = useState({
     logged: false,
   });
 
@@ -15,7 +15,7 @@ export function AuthProvider({ children }) {
     <Context.Provider
       value={{
         user,
-        setUserHook,
+        setUser,
       }}
     >
       {children}

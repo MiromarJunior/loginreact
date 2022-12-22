@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <Navbar bg="light" expand="lg" style={{ marginBottom: 20 }}>
             <Container>
-                <Navbar.Brand href="#home">Aula Login</Navbar.Brand>
+                <Navbar.Brand href="#home">brunolctba</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
             </Container>
         </Navbar>
